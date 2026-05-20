@@ -15,18 +15,26 @@
     }
     
 body {
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('image(1).jpg');
+  background-image:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('image(1).jpg');
+
   min-height: 100vh;
   padding: 15px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #e6f1ff;
-  overflow: hidden;
 
-  background-repeat: no-repeat;      
-  background-size: cover;             
-  background-position: center center; 
+  color: #e6f1ff;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
     
@@ -66,20 +74,24 @@ body {
       font-size: 0.9rem;
     }
     
-   .email-app {
-    width: 100%;
-    max-width: 800px;
-    max-height: calc(100vh - 150px);
-    background: #0a1929;
-    border-radius: 16px;
-    box-shadow: 
-        0 12px 40px rgba(0, 80, 180, 0.45),
-        0 4px 15px rgba(46, 105, 206, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    overflow: auto;
-    border: 1px solid #4a90e2;
-    flex-shrink: 0;
-    position: relative;
+.email-app {
+  width: 100%;
+  max-width: 800px;
+
+  background: #0a1929;
+
+  border-radius: 16px;
+
+  box-shadow:
+      0 12px 40px rgba(0, 80, 180, 0.45),
+      0 4px 15px rgba(46, 105, 206, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+  border: 1px solid #4a90e2;
+
+  position: relative;
+
+  overflow: visible;
 }
 
 .email-app::before {
@@ -152,6 +164,7 @@ body {
     
     .app-content {
       padding: 20px;
+      overflow-x: hidden;
     }
     
     .form-grid {
@@ -268,11 +281,11 @@ body {
       display: flex;
       justify-content: center;
       margin-top: 20px;
-      position: sticky;
-      bottom: 0;
       background: #e2ebf5;
-      padding: 10px 0;
-      margin: 20px -20px -20px;
+      padding: 14px;
+      margin-left: -20px;
+      margin-right: -20px;
+      margin-bottom: -20px;
       border-top: 1px solid #1e3a5f;
     }
     
@@ -333,9 +346,6 @@ body {
         align-self: stretch;
       }
       
-      .email-app {
-        max-height: calc(100vh - 130px);
-      }
     }
     
     .info-text {
@@ -356,6 +366,118 @@ body {
       margin: 15px 0;
       opacity: 0.8;
     }
+
+    @media (max-width: 768px) {
+
+  .email-app {
+    border-radius: 12px;
+  }
+
+  .app-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .app-header h3 {
+    font-size: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .mode-toggle {
+    width: 100%;
+  }
+
+  .mode-btn {
+    flex: 1;
+    font-size: 0.8rem;
+    padding: 10px 8px;
+  }
+
+  .app-content {
+    padding: 14px;
+  }
+
+  .form-grid,
+  .crypto-params,
+  .key-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .form-section {
+    padding: 12px;
+  }
+
+  .form-section h4 {
+    font-size: 0.95rem;
+    flex-wrap: wrap;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  textarea {
+    min-height: 100px;
+  }
+
+  .key-value {
+    font-size: 0.75rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .process-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px;
+    font-size: 0.95rem;
+  }
+
+  .action-bar {
+    margin-left: -14px;
+    margin-right: -14px;
+    margin-bottom: -14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.25rem;
+  }
+
+  .app-header h3 {
+    font-size: 0.9rem;
+  }
+
+  .mode-btn {
+    font-size: 0.72rem;
+    padding: 10px 6px;
+  }
+
+  .form-group label {
+    font-size: 0.78rem;
+  }
+
+  .key-display {
+    padding: 12px;
+  }
+
+  .key-item h5 {
+    font-size: 11px;
+  }
+
+  .key-value {
+    font-size: 0.7rem;
+    padding: 7px;
+  }
+}
   </style>
 </head>
 <body>
