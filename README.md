@@ -10,6 +10,8 @@ index.html — main webpage with RSA logic
 
 background image — used for styling
 
+[Application of RSA Cryptosystem - Group 1](Application%20of%20RSA%20Cryptosystem%20-%20Group%201.pdf) — a detailed report on RSA Cryptosystem and the website developed
+
 🚀 **Usage**
 
 Clone or download the repository.
