@@ -1,25 +1,46 @@
-**RSA Encryption Website**
+# RSA Cryptosystem Project
 
-A minimal website that demonstrates the **RSA encryption method** using **JavaScript**.
+A minimal website and academic project demonstrating the **RSA encryption method** using **JavaScript**.  
+Developed as part of **CSE-3030 Discrete Mathematics** coursework at **Myanmar Institute of Information Technology (MIIT)**.
 
-It allows users to enter prime numbers, generate keys, and encrypt or decrypt messages interactively.
+---
 
-📂 **Project Files**
+## 📂 Project Files
 
-index.html — main webpage with RSA logic
+- **[Application of RSA Cryptosystem - Group 1](Application%20of%20RSA%20Cryptosystem%20-%20Group%201.pdf)** — detailed PDF report including mathematical background, encryption/decryption examples, and applications  
+- **index.html** — main webpage with interactive RSA logic (key generation, encryption, decryption)  
+- **background image** — styling asset for the website  
 
-background image — used for styling
+---
 
-[Application of RSA Cryptosystem - Group 1](Application%20of%20RSA%20Cryptosystem%20-%20Group%201.pdf) — a detailed report on RSA Cryptosystem and the website developed
+## 🚀 Usage
 
-🚀 **Usage**
+1. Clone or download this repository.  
+2. Open `index.html` in your browser.  
+3. Enter values for **p**, **q**, and **e**, then choose **Encrypt** or **Decrypt** mode.  
+4. The site will generate keys and process your message interactively.  
 
-Clone or download the repository.
+Or visit the live demo:  
+👉 [SecureMail RSA Encrypted Email](https://marilynxo.github.io/SecureMail-RSA-Encrypted-Email/)
 
-Open index.html in your browser.
+---
 
-(or)
+## 🎯 Learning Outcomes
 
-Visit this link: https://marilynxo.github.io/SecureMail-RSA-Encrypted-Email/
+- Understand the difference between **public-key** and **private-key cryptosystems**  
+- Apply RSA encryption and decryption formulas step by step  
+- Explore mathematical foundations: modular exponentiation, Fermat’s Little Theorem, Extended Euclidean Algorithm  
+- Demonstrate practical applications of RSA in secure communication  
 
-Enter values for p, q, and e, then choose Encrypt or Decrypt mode.
+---
+
+## 📝 Authors
+
+Project by students of **Myanmar Institute of Information Technology**  
+
+---
+
+## 📖 Reference
+
+- Kenneth H. Rosen, *Discrete Mathematics and Its Applications*, 8th Edition, ISBN: 978-0-07-068188-0
+
